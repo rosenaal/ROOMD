@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,300;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+  
+  header,
+  section {
+      
+    overflow-x: hidden;
+    
+  }
+  
+  :root {
+    --Montserrat: "Montserrat", cursive;
+    --raleway: "Raleway", cursive;
+    --light-black: #2e2c2caf;
+    --bggradient: linear-gradient(to bottom, #dd2476, #ff512f);
+  }
+  
+  header a {
+    font-family: var(--Montserrat);
+    font-size: 1em;
+    color: black;
+  }
+  
+  
+  
+  header .nav-item:last-child {
+    padding-right: 10.5em;
+  }
+  
+  header .nav-item {
+    padding: 0.9em;
+  }
+  
+  header .navbar-brand {
+    padding-left: 8rem;
+  }
+  
+  header .nav-link:hover {
+    color: gray;
+  }
+  
+  header .row .col-md-7 {
+    padding: 23vmin 1vmin;
+    padding-bottom: 35vmin;
+  }
+  
+  header .row .col-md-5 {
+    padding: 4.2vmin 1vmin;
+  }
+  
+  header .row .col-md-5 img {
+    width: 90%;
+  }
+  
+ 
+
+    .logo {
+      position: relative; 
+      width: 50px;
+    }
+  
+  header .container .col-md-7 {
+    font-family: "Raleway", sans-serif;
+  }
+  
+  header .container .col-md-7 h6 {
+    padding: 1vmin;
+    letter-spacing: 4px;
+  }
+  
+  header .container .col-md-7 h1 {
+    font-size: 8.5vmin;
+    font-weight: bold;
+    padding: 0.1em 0em;
+  }
+  
+  header .container .col-md-7 p {
+    padding: 1vmin 5vmin;
+  }
+
+  
+  .primary-btn {
+    border-radius: 30px;
+    font-weight: bold;
+  }
+
+  
+button.rounded {
+    background: #6125ee;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 30px;
+    padding: 10px 30px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+  
+/* start: global styles */
+body {
+    font-family: "Roboto", "Helvetica";
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(37, 37, 37);
+    line-height: 1.7;
+}
+
+
+
+*:not(.slick-track):not(.slick-list) {
+    transition: 0.4s;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/
+/* start: properties styles */
+#properties {
+    margin: 4rem 0 8rem;
+    position: relative;
+}
+
+#properties h2 {
+    margin-bottom: 3rem;
+}
+
+#properties .container {
+    position: relative;
+}
+
+#properties .container:before {
+    content: "/";
+    position: absolute;
+    right: 80px;
+    top: 18px;
+    color: #999;
+}
+
+#properties-slider a.slick-arrow {
+    color: #000;
+    position: absolute;
+    top: -78px;
+    right: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+}
+
+#properties-slider a.slick-prev {
+    right: 80px;
+}
+
+#properties-slider .slick-slide {
+    padding: 0 15px;
+}
+
+#properties-slider img {
+    width: 100%;
+    display: block;
+}
+
+#properties-slider .property-details {
+    padding: 1rem;
+}
+
+#properties-slider .price {
+    font-size: 1.2rem;
+    color: #343a40;
+    font-weight: 800;
+    margin: 0 0 0.5rem 0;
+}
+
+#properties-slider .property-details span {
+    font-size: 0.8rem;
+    padding-right: 15px;
+}
+
+#properties-slider .property-details span.baths {
+    padding-left: 10px;
+}
+
+#properties-slider .property-details span.sqft {
+    padding-right: 0;
+    padding-left: 10px;
+}
+
+#properties-slider .property-details span.beds,
+#properties-slider .property-details span.baths {
+    border-right: 1px solid #888;
+}
+
+#properties-slider .property-details address {
+    font-size: 0.8rem;
+    font-style: normal;
+    margin-top: 0.5rem;
+}
+
+#properties button.rounded {
+    display: block;
+    margin: 2rem auto 0;
+    width: 350px;
+}
+/* end: properties styles */
+
+
+footer {
+  background: rgba(0, 0, 0, 0.815);
+  overflow-x: hidden;
+  padding: 14vmin 18vmin;
+}
+
+footer p > span {
+  color: #ff512f;
+}
+
+footer input {
+  border: none !important;
+}
+
+footer input::placeholder {
+  color: white !important;
+}
+
+footer .input-group .input-group-text {
+  background: var(--bggradient);
+  border: none;
+}
+
+footer .column i {
+  color: #dd2476;
+}
+
+/* It is Adjacent sibling combinator */
+
+footer .column i + i {
+  padding: 0 0.5em;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.815);
+  z-index: 9999;
+  transition: all 1.5s ease;
+}
